@@ -1,0 +1,14 @@
+generate llvm files
+clang -S -emit-llvm *.c
+
+link them into a single one
+llvm-link -S -v -o single.ll *.ll
+
+(Optional) Optimise your code (maybe some alias analysis)
+opt -S -O3 -aa -basicaaa -tbaa -licm single.ll -o optimised.ll
+
+Generate assembly (generates a optimised.s file)
+llc optimised.ll
+
+Create executable (named a.out)
+clang optimised.s
