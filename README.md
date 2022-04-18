@@ -16,3 +16,4 @@ In this project, we will be researching and implementing basic optimization pass
 - .ll vs .bc, llvm compile process - https://stackoverflow.com/questions/14107743/llvm-and-compiler-nomenclature
 - Explanation of basic LLVM IR - https://stackoverflow.com/questions/27447865/understanding-the-simplest-llvm-ir#:~:text=The%20align%204%20ensures%20that,C%2B%2B%20ret%20i32%200
 - Building pass out of src - https://llvm.org/docs/CMake.html
+- Writing an LLVM Pass - https://www.inf.ed.ac.uk/teaching/courses/ct/17-18/slides/llvm-2-writing_pass.pdf
